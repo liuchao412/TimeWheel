@@ -16,10 +16,9 @@ env:
   global:
     - GH_REF: github.com/liuchao412/TimeWheel.git
     - secure: "Czm3YdhkqNymkVbLIZsPSOBfyPZYrqNDBqK+Y7hnX0zkupWbczaPh7tO+dP686vu3Er8nIb3oXH1k62yqPu6RuvWTx9FeiRWT18fCni6Bw54uXlXzdVj2htc0U+MAM/EctoMGB/4q66vScdwovgsRlI81RXS58yO8YAoTBEE71zEvjlCBfdS5bR86OJGfWjj41j7TGku3GXGRFSjHwDaL+5gobP4G922Ge0hqemXo6Nk96lOGUq6dNeSeMybTThLFAfyC+jMQ5ArbLVx6oOO8BgoroG1HYiJD+W0W7fIqXO8Jn59mZ3lQqVGrXtGHw/Gcf2WJJMuZlw0QHhZ8W5nHoY2pA0MDxg2q0UEyYV4zFDbWMwDsU4h0Lw5ldTI7x3W81tiga8H3hW0Vs7ORup52zpDg+gnVx4GWnQIQorSs9szuU9mHdwxi4/oJOglFACrz/GPKPivAyHimguKvdT+qdbkXcMLRLwwPbaj0UGib1xxGwbMgNSIqoY6h71EnkVtIbFwSoPVeNta/iQPy+A6eisLBMsFfjP4GUOjOx3KIPrWvzH10D3zOE6PlWLzhE+a4+wXE9ukNILqgFpqIywhKxoaQxEPxK/bC40NP8lr4fFbBiKOOGTUMwzIQBwcA+wjJCWEWXtsMYYlU7Mabyv85Q8Ss92IjECWEHK/Bu7E3DY="
-    
 after_script:
   - echo $(pwd)
-  - echo "wwww" > ./test/aaa.txt
+  - echo "liuchao412" > ./test/aaa.txt
   - echo $(ls -l)
   - git init
   - git config user.name "liuchao412"
