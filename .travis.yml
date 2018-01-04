@@ -14,16 +14,16 @@ branches:
 
 env:
   global:
-    - GH_REF: github.com/freeeyes/TimeWheel.git
-    - secure: "p3Ycp+iwi2N52fYC99LGE3FKrtaQDOJRxSyFWaFLQKwFVX5VI58gS6S69Wr6TQCKMkbpcXWc/poEkhWm7QlDeoRsW1PyA/RvunFEO4YyZr0IR7Orsuo/fLmKUZBalSMnDa6dZyi2jS6PPPGwCOP3kJ7Cj0hLj66fVg0TKWhOWKDPoJ8wk8sBcZTlNIQRN5axgyqmWnBO7CRaUEF6QHHz4Z8Nzl5cQZZHmqfaXa2j3NlEjoy3Cyz1CWV1pXtlpD6aMy9xIyQIwPOOwyUwK/BFwdNQG37yPgTIxsYGTb4GOFYUM0Br3V+TgA+gy5QLDhE5JVqUmIl2tbB5J99BgbVDLJyoR6AFyNYMKQhwNkKmSq+ShVBaFTcMjeOiMcWDnQ8Q+79EUZaEI451mLn9e8PczRJKPPNy+Osrp+EvL9ielcHXb4lDw92+2DIz4LxKSJ0y+IwcwxxZiXCqugys5mxL+2port+bYTReS60m4u/xU6CDfOfmm+ZwnkLY0K7Fv23mVXmRPw4JigXmUNFsVlJWUHvTPQVninar2/xEy4GDnl3A/DSAPGXjaVVyrsrKe33JVmm2paBvodj2lBX/WD0ogq6UP6M12cB+lX1QbMy6BZnVELECFCQKUt95idz9OdPZHztpmwu+zJZl9W7BC665ma9diUJdJY43DLIaPvBMkUE="
+    - GH_REF: github.com/liuchao412/TimeWheel.git
+    - secure: "Czm3YdhkqNymkVbLIZsPSOBfyPZYrqNDBqK+Y7hnX0zkupWbczaPh7tO+dP686vu3Er8nIb3oXH1k62yqPu6RuvWTx9FeiRWT18fCni6Bw54uXlXzdVj2htc0U+MAM/EctoMGB/4q66vScdwovgsRlI81RXS58yO8YAoTBEE71zEvjlCBfdS5bR86OJGfWjj41j7TGku3GXGRFSjHwDaL+5gobP4G922Ge0hqemXo6Nk96lOGUq6dNeSeMybTThLFAfyC+jMQ5ArbLVx6oOO8BgoroG1HYiJD+W0W7fIqXO8Jn59mZ3lQqVGrXtGHw/Gcf2WJJMuZlw0QHhZ8W5nHoY2pA0MDxg2q0UEyYV4zFDbWMwDsU4h0Lw5ldTI7x3W81tiga8H3hW0Vs7ORup52zpDg+gnVx4GWnQIQorSs9szuU9mHdwxi4/oJOglFACrz/GPKPivAyHimguKvdT+qdbkXcMLRLwwPbaj0UGib1xxGwbMgNSIqoY6h71EnkVtIbFwSoPVeNta/iQPy+A6eisLBMsFfjP4GUOjOx3KIPrWvzH10D3zOE6PlWLzhE+a4+wXE9ukNILqgFpqIywhKxoaQxEPxK/bC40NP8lr4fFbBiKOOGTUMwzIQBwcA+wjJCWEWXtsMYYlU7Mabyv85Q8Ss92IjECWEHK/Bu7E3DY="
     
 after_script:
   - echo $(pwd)
   - echo "wwww" > ./test/aaa.txt
   - echo $(ls -l)
   - git init
-  - git config user.name "freeeyes"
-  - git config user.email "freeeyes@163.com"
+  - git config user.name "liuchao412"
+  - git config user.email "liuchao412@foxmail.com"
   - git add -u ./test/aaa.txt
   - git commit -m "[ci skip]Update test"
   - git push -f "https://${GH_TOKEN}@${GH_REF}" HEAD:master
